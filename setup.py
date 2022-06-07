@@ -20,7 +20,6 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    package_dir={"": "atom_bk_frame"},
     packages=setuptools.find_packages(),
     python_requires=">=3.7",
 )
