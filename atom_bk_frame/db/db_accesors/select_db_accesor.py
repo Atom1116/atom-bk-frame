@@ -1,9 +1,9 @@
 import logging
 import traceback
 from typing import Dict, List
-from todo_scratch.bk_base.db.db_accesors.base_db_accesor import BaseDbAccesor
-from todo_scratch.bk_base.db.entities.entity import Entity
-from todo_scratch.bk_base.util.log.log_util import get_main_logger
+from atom_bk_frame.db.db_accesors.base_db_accesor import BaseDbAccesor
+from atom_bk_frame.db.entities.entity import Entity
+from atom_bk_frame.util.log.log_util import get_main_logger
 
 
 class SelectDbAccesor(BaseDbAccesor):

@@ -1,5 +1,5 @@
 from typing import List
-from todo_scratch.bk_base.db.entities.entity import Entity
+from atom_bk_frame.db.entities.entity import Entity
 
 
 class BaseQueryFactory:

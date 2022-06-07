@@ -1,11 +1,11 @@
-from todo_scratch.bk_base.auth.entities.auth_user_entity import AuthUserEntity
-from todo_scratch.bk_base.auth.entities.session_entitiy import SessionEntity
-from todo_scratch.bk_base.auth.session_maneger import SessionManeger
-from todo_scratch.bk_base.controller.auth_mixin import AuthMixin
-from todo_scratch.bk_base.controller.controller import Controller
-from todo_scratch.bk_base.db.db_accesors.db_accesor import DbAccesor
-from todo_scratch.bk_base.http.request import Request
-from todo_scratch.bk_base.http.response.response import Response
+from atom_bk_frame.auth.entities.auth_user_entity import AuthUserEntity
+from atom_bk_frame.auth.entities.session_entitiy import SessionEntity
+from atom_bk_frame.auth.session_maneger import SessionManeger
+from atom_bk_frame.controller.auth_mixin import AuthMixin
+from atom_bk_frame.controller.controller import Controller
+from atom_bk_frame.db.db_accesors.db_accesor import DbAccesor
+from atom_bk_frame.http.request import Request
+from atom_bk_frame.http.response.response import Response
 
 
 class SignOutController(AuthMixin, Controller):

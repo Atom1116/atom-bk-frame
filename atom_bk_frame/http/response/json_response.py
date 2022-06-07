@@ -1,5 +1,5 @@
 import json
-from todo_scratch.bk_base.http.response.response import Response
+from atom_bk_frame.http.response.response import Response
 
 
 class JSONResponse(Response):

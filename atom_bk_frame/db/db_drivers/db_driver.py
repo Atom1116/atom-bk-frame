@@ -1,8 +1,7 @@
 
 from abc import ABCMeta, abstractclassmethod
 from typing import Dict
-
-from todo_scratch.bk_base.db.db_accesors.base_query_factory import BaseQueryFactory
+from atom_bk_frame.db.db_accesors.base_query_factory import BaseQueryFactory
 
 
 class DbDriver(metaclass=ABCMeta):

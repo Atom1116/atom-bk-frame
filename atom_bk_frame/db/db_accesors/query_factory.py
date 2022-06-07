@@ -1,7 +1,7 @@
 from typing import List
-from todo_scratch.bk_base.db.db_accesors.base_query_factory import BaseQueryFactory
-from todo_scratch.bk_base.db.entities.entity import Entity
-from todo_scratch.bk_base.db.entities.items.base_item import BaseItem
+from atom_bk_frame.db.db_accesors.base_query_factory import BaseQueryFactory
+from atom_bk_frame.db.entities.entity import Entity
+from atom_bk_frame.db.entities.items.base_item import BaseItem
 
 
 class MysqlQueryFactory(BaseQueryFactory):

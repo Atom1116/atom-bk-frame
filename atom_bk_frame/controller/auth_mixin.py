@@ -2,12 +2,15 @@
 
 from typing import Callable, Dict
 from urllib.request import Request
-from todo_scratch.bk_base.auth.entities.auth_user_entity import AuthUserEntity
-from todo_scratch.bk_base.http.response.http_error_response import Response401, Response403, get_405_callback
-from todo_scratch.bk_base.http.response.response import Response
+from atom_bk_frame.auth.entities.auth_user_entity import AuthUserEntity
+from atom_bk_frame.http.response.http_error_response import Response401, Response403, get_405_callback
+from atom_bk_frame.http.response.response import Response
 
 
 class AuthMixin:
+    """認証Mixin
+    コントローラで処理する認証処理メソッドを定義するMixinです、
+    """
 
     is_admin = False
 

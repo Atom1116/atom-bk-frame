@@ -1,10 +1,10 @@
-from todo_scratch.bk_base.db.db_drivers.db_driver import DbDriver
-from todo_scratch.bk_base.util.class_loader_util import get_module_by_route
+from atom_bk_frame.db.db_drivers.db_driver import DbDriver
+from atom_bk_frame.util.class_loader_util import get_module_by_route
 
 
 class DbDriverManeger:
     DB_TYPE_DICT = {
-        "mysql": ["MySqlDriver", "todo_scratch.bk_base.db.db_drivers.mysql_driver"]
+        "mysql": ["MySqlDriver", "atom_bk_frame.db.db_drivers.mysql_driver"]
     }
 
     @classmethod

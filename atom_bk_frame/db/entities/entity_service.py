@@ -1,7 +1,6 @@
 from typing import Dict, List
-from todo_scratch.bk_base.db.entities.entity import Entity
-
-from todo_scratch.bk_base.util.class_loader_util import get_module_by_route
+from atom_bk_frame.db.entities.entity import Entity
+from atom_bk_frame.util.class_loader_util import get_module_by_route
 
 
 class EntityService:

@@ -1,5 +1,5 @@
 from typing import Dict, List
-from todo_scratch.bk_base.db.entities.items.base_item import BaseItem
+from atom_bk_frame.db.entities.items.base_item import BaseItem
 
 
 class Entity:

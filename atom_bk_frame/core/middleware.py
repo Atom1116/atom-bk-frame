@@ -1,7 +1,7 @@
 from abc import ABCMeta, abstractclassmethod
 from typing import Dict, Tuple
-from todo_scratch.bk_base.http.request import Request
-from todo_scratch.bk_base.http.response.response import Response
+from atom_bk_frame.http.request import Request
+from atom_bk_frame.http.response.response import Response
 
 
 class MiddlewareProcess:

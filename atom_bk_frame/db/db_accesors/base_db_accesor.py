@@ -1,7 +1,7 @@
-from todo_scratch.bk_base.db.db_drivers.db_driver import DbDriver
-from todo_scratch.bk_base.db.db_drivers.db_driver_maneger import DbDriverManeger
-from todo_scratch.bk_base.db.entities.entity_service import EntityService
-from todo_scratch.bk_base.util.settings_util import get_member_by_settings
+from atom_bk_frame.db.db_drivers.db_driver import DbDriver
+from atom_bk_frame.db.db_drivers.db_driver_maneger import DbDriverManeger
+from atom_bk_frame.db.entities.entity_service import EntityService
+from atom_bk_frame.util.settings_util import get_member_by_settings
 
 
 class BaseDbAccesor:

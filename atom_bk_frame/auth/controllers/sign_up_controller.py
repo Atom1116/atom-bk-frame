@@ -1,14 +1,14 @@
 import re
-from todo_scratch.bk_base.auth.encrypt_maneger import EncryptManeger
-from todo_scratch.bk_base.auth.entities.auth_user_entity import AuthUserEntity
-from todo_scratch.bk_base.auth.session_maneger import SessionManeger
-from todo_scratch.bk_base.controller.controller import Controller
-from todo_scratch.bk_base.db.db_accesors.db_accesor import DbAccesor
-from todo_scratch.bk_base.http.request import Request
-from todo_scratch.bk_base.http.response.http_error_response import Response404
-from todo_scratch.bk_base.http.response.response import Response
-from todo_scratch.bk_base.util.class_loader_util import get_module_by_full_route
-from todo_scratch.bk_base.util.settings_util import get_member_by_settings
+from atom_bk_frame.auth.encrypt_maneger import EncryptManeger
+from atom_bk_frame.auth.entities.auth_user_entity import AuthUserEntity
+from atom_bk_frame.auth.session_maneger import SessionManeger
+from atom_bk_frame.controller.controller import Controller
+from atom_bk_frame.db.db_accesors.db_accesor import DbAccesor
+from atom_bk_frame.http.request import Request
+from atom_bk_frame.http.response.http_error_response import Response404
+from atom_bk_frame.http.response.response import Response
+from atom_bk_frame.util.class_loader_util import get_module_by_full_route
+from atom_bk_frame.util.settings_util import get_member_by_settings
 
 
 class SignUpController(Controller):

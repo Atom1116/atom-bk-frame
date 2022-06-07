@@ -1,6 +1,6 @@
 from typing import Dict
-from todo_scratch.bk_base.validator.base_validator import BaseValidator
-from todo_scratch.bk_base.validator.validator_item import ValidatorItem
+from atom_bk_frame.validator.base_validator import BaseValidator
+from atom_bk_frame.validator.validator_item import ValidatorItem
 
 
 class JsonValidator(BaseValidator):

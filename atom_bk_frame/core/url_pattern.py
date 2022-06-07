@@ -1,10 +1,12 @@
 
 import re
 from typing import AnyStr, Pattern
-from todo_scratch.bk_base.controller.controller import Controller
+from atom_bk_frame.controller.controller import Controller
 
 
 class UrlPattern:
+    """URLパターンクラス
+    """
 
     def __init__(self, path='/$', controller: Controller = None) -> None:
         self.__path = "^/api" + path

@@ -1,12 +1,17 @@
 import typing as t
-from todo_scratch.bk_base.core.url_pattern import UrlPattern
-from todo_scratch.bk_base.http.response.http_error_response import get_404_callback
-from todo_scratch.bk_base.http.request import Request
-from todo_scratch.bk_base.util.settings_util import get_member_by_settings, get_module_path_by_settings
-from todo_scratch.bk_base.util.class_loader_util import get_module_by_route
+from atom_bk_frame.core.url_pattern import UrlPattern
+from atom_bk_frame.http.response.http_error_response import get_404_callback
+from atom_bk_frame.http.request import Request
+from atom_bk_frame.util.settings_util import get_member_by_settings, get_module_path_by_settings
+from atom_bk_frame.util.class_loader_util import get_module_by_route
 
 
 class Router:
+    """ルータークラス
+
+    Returns:
+        _type_: _description_
+    """
 
     URL_PATTERN = "urlpatterns"
     AUTH_URL_PATTERN = "auth_urlpatterns"

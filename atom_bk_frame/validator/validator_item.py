@@ -1,7 +1,5 @@
-
 from typing import Any, Callable, List
-
-from todo_scratch.bk_base.validator.base_validator import BaseValidator
+from atom_bk_frame.validator.base_validator import BaseValidator
 
 
 class ValidatorItem:

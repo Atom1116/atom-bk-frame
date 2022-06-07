@@ -1,9 +1,9 @@
 import random
 import string
 import datetime
-from todo_scratch.bk_base.auth.entities.session_entitiy import SessionEntity
-from todo_scratch.bk_base.db.db_accesors.db_accesor import DbAccesor
-from todo_scratch.bk_base.util.settings_util import get_member_by_settings
+from atom_bk_frame.auth.entities.session_entitiy import SessionEntity
+from atom_bk_frame.db.db_accesors.db_accesor import DbAccesor
+from atom_bk_frame.util.settings_util import get_member_by_settings
 
 
 class SessionManeger:
@@ -46,10 +46,26 @@ class SessionManeger:
 
     @staticmethod
     def generate_set_cookie_syntax(session_code: str) -> str:
+        """セッションクッキー文字列を生成します
+
+        Args:
+            session_code (str): セッションコード
+
+        Returns:
+            str: セッションクッキー文字列
+        """
         return "session={0}; Path=/api;SameSite=Strict;HttpOnly".format(session_code)
 
     @staticmethod
     def generate_delete_cookie_syntax() -> str:
+        """削除用セッションクッキー文字列を生成します
+
+        Args:
+            session_code (str): セッションコード
+
+        Returns:
+            str: 削除用セッションクッキー文字列
+        """
 
         expired_datatime = datetime.datetime.now() - datetime.timedelta(days=1)
         expired_datatime_str = expired_datatime.strftime('%a,%d %b %Y %H:%M:%S GMT')
@@ -57,4 +73,12 @@ class SessionManeger:
 
     @ staticmethod
     def check_epired(expired: datetime.datetime) -> bool:
+        """セッションの期限チェック
+
+        Args:
+            expired (datetime): セッション日時
+
+        Returns:
+            bool: 期限切れ有無
+        """
         return expired >= datetime.datetime.now()

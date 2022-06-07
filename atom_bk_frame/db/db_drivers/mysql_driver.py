@@ -1,9 +1,9 @@
 
 from typing import Dict, Tuple
-from todo_scratch.bk_base.db.db_accesors.query_factory import MysqlQueryFactory
-from todo_scratch.bk_base.db.db_drivers.db_driver import DbDriver
+from atom_bk_frame.db.db_accesors.query_factory import MysqlQueryFactory
+from atom_bk_frame.db.db_drivers.db_driver import DbDriver
+from atom_bk_frame.util.settings_util import get_member_by_settings
 import mysql.connector as mysql
-from todo_scratch.bk_base.util.settings_util import get_member_by_settings
 from mysql.connector import (connection)
 
 
