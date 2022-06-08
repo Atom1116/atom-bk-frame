@@ -35,7 +35,7 @@ class SignUpController(Controller):
                 self._validate_password(password)):
             return Response404()
 
-        is_two_step_verification_by_email = get_member_by_settings("IS_TWO_STEP_VERFICATION_BY_EMAIL", False)
+        is_two_step_verification_by_email = get_member_by_settings("IS_TWO_STEP_VERFICATION_BY_EMAIL")
         if is_two_step_verification_by_email:
             # emailによる二段階認証のための、処理を開始
             # TODO: emailによる二段階認証処理を実装

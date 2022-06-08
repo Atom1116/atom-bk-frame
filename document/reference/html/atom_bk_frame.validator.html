@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>atom_bk_frame.validator package &mdash; atom_bk_frame  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="atom_bk_frame.util.log package" href="atom_bk_frame.util.log.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> atom_bk_frame
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="atom_bk_frame.html">atom_bk_frame package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="atom_bk_frame.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="atom_bk_frame.auth.html">atom_bk_frame.auth package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="atom_bk_frame.controller.html">atom_bk_frame.controller package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="atom_bk_frame.core.html">atom_bk_frame.core package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="atom_bk_frame.db.html">atom_bk_frame.db package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="atom_bk_frame.http.html">atom_bk_frame.http package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="atom_bk_frame.middleware.html">atom_bk_frame.middleware package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="atom_bk_frame.util.html">atom_bk_frame.util package</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">atom_bk_frame.validator package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-atom_bk_frame.validator.base_validator">atom_bk_frame.validator.base_validator module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-atom_bk_frame.validator.json_validator">atom_bk_frame.validator.json_validator module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-atom_bk_frame.validator.validator_item">atom_bk_frame.validator.validator_item module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-atom_bk_frame.validator">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="atom_bk_frame.html#module-atom_bk_frame">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">atom_bk_frame</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="atom_bk_frame.html">atom_bk_frame package</a> &raquo;</li>
+      <li>atom_bk_frame.validator package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/atom_bk_frame.validator.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="atom-bk-frame-validator-package">
+<h1>atom_bk_frame.validator package<a class="headerlink" href="#atom-bk-frame-validator-package" title="Permalink to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-atom_bk_frame.validator.base_validator">
+<span id="atom-bk-frame-validator-base-validator-module"></span><h2>atom_bk_frame.validator.base_validator module<a class="headerlink" href="#module-atom_bk_frame.validator.base_validator" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="atom_bk_frame.validator.base_validator.BaseValidator">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atom_bk_frame.validator.base_validator.</span></span><span class="sig-name descname"><span class="pre">BaseValidator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">target</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/atom_bk_frame/validator/base_validator.html#BaseValidator"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.validator.base_validator.BaseValidator" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>バリデーション基底クラス</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="atom_bk_frame.validator.base_validator.BaseValidator.init_validator_items">
+<span class="sig-name descname"><span class="pre">init_validator_items</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/atom_bk_frame/validator/base_validator.html#BaseValidator.init_validator_items"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.validator.base_validator.BaseValidator.init_validator_items" title="Permalink to this definition"></a></dt>
+<dd><p>バリデーションアイテムの設定</p>
+<dl class="field-list simple">
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><p><strong>NotImplementedError</strong> – オーバライド未設定例外</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="atom_bk_frame.validator.base_validator.BaseValidator.result">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">result</span></span><a class="headerlink" href="#atom_bk_frame.validator.base_validator.BaseValidator.result" title="Permalink to this definition"></a></dt>
+<dd><p>変換処理後のバリデーション対象のオブジェクト</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>バリデーション対象オブジェクト</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>_type_</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atom_bk_frame.validator.base_validator.BaseValidator.validate">
+<span class="sig-name descname"><span class="pre">validate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="reference internal" href="_modules/atom_bk_frame/validator/base_validator.html#BaseValidator.validate"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.validator.base_validator.BaseValidator.validate" title="Permalink to this definition"></a></dt>
+<dd><p>バリデーション処理</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>バリデーション判定</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-atom_bk_frame.validator.json_validator">
+<span id="atom-bk-frame-validator-json-validator-module"></span><h2>atom_bk_frame.validator.json_validator module<a class="headerlink" href="#module-atom_bk_frame.validator.json_validator" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="atom_bk_frame.validator.json_validator.JsonValidator">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atom_bk_frame.validator.json_validator.</span></span><span class="sig-name descname"><span class="pre">JsonValidator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">target</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/atom_bk_frame/validator/json_validator.html#JsonValidator"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.validator.json_validator.JsonValidator" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#atom_bk_frame.validator.base_validator.BaseValidator" title="atom_bk_frame.validator.base_validator.BaseValidator"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseValidator</span></code></a></p>
+<p>Jsonバリデーションクラス</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>BaseValidator</strong> (<em>_type_</em>) – バリデーション基底クラス</p>
+</dd>
+</dl>
+<dl class="py property">
+<dt class="sig sig-object py" id="atom_bk_frame.validator.json_validator.JsonValidator.result">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">result</span></span><a class="headerlink" href="#atom_bk_frame.validator.json_validator.JsonValidator.result" title="Permalink to this definition"></a></dt>
+<dd><p>変換処理後のバリデーション対象のオブジェクト</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>バリデーション対象オブジェクト</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>_type_</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atom_bk_frame.validator.json_validator.JsonValidator.validate">
+<span class="sig-name descname"><span class="pre">validate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/atom_bk_frame/validator/json_validator.html#JsonValidator.validate"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.validator.json_validator.JsonValidator.validate" title="Permalink to this definition"></a></dt>
+<dd><p>バリデーション処理</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>バリデーション判定</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-atom_bk_frame.validator.validator_item">
+<span id="atom-bk-frame-validator-validator-item-module"></span><h2>atom_bk_frame.validator.validator_item module<a class="headerlink" href="#module-atom_bk_frame.validator.validator_item" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="atom_bk_frame.validator.validator_item.BoolValidatorItem">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atom_bk_frame.validator.validator_item.</span></span><span class="sig-name descname"><span class="pre">BoolValidatorItem</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">is_required</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/atom_bk_frame/validator/validator_item.html#BoolValidatorItem"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.validator.validator_item.BoolValidatorItem" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#atom_bk_frame.validator.validator_item.ValidatorItem" title="atom_bk_frame.validator.validator_item.ValidatorItem"><code class="xref py py-class docutils literal notranslate"><span class="pre">ValidatorItem</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="atom_bk_frame.validator.validator_item.DatetimeValidatorItem">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atom_bk_frame.validator.validator_item.</span></span><span class="sig-name descname"><span class="pre">DatetimeValidatorItem</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">is_required</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/atom_bk_frame/validator/validator_item.html#DatetimeValidatorItem"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.validator.validator_item.DatetimeValidatorItem" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#atom_bk_frame.validator.validator_item.ValidatorItem" title="atom_bk_frame.validator.validator_item.ValidatorItem"><code class="xref py py-class docutils literal notranslate"><span class="pre">ValidatorItem</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="atom_bk_frame.validator.validator_item.IntValidatorItem">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atom_bk_frame.validator.validator_item.</span></span><span class="sig-name descname"><span class="pre">IntValidatorItem</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">is_required</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/atom_bk_frame/validator/validator_item.html#IntValidatorItem"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.validator.validator_item.IntValidatorItem" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#atom_bk_frame.validator.validator_item.ValidatorItem" title="atom_bk_frame.validator.validator_item.ValidatorItem"><code class="xref py py-class docutils literal notranslate"><span class="pre">ValidatorItem</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="atom_bk_frame.validator.validator_item.ListValidatorItem">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atom_bk_frame.validator.validator_item.</span></span><span class="sig-name descname"><span class="pre">ListValidatorItem</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">validator_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_required</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/atom_bk_frame/validator/validator_item.html#ListValidatorItem"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.validator.validator_item.ListValidatorItem" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#atom_bk_frame.validator.validator_item.ValidatorItem" title="atom_bk_frame.validator.validator_item.ValidatorItem"><code class="xref py py-class docutils literal notranslate"><span class="pre">ValidatorItem</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="atom_bk_frame.validator.validator_item.ListValidatorItem.convert">
+<span class="sig-name descname"><span class="pre">convert</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">list</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Any</span></span></span><a class="reference internal" href="_modules/atom_bk_frame/validator/validator_item.html#ListValidatorItem.convert"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.validator.validator_item.ListValidatorItem.convert" title="Permalink to this definition"></a></dt>
+<dd><p>バリデーション対象オブジェクトのバリデーション後の変換処理</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>value</strong> (<em>Any</em>) – バリデーション対象オブジェクト</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>返還後オブジェクト</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Any</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atom_bk_frame.validator.validator_item.ListValidatorItem.validate">
+<span class="sig-name descname"><span class="pre">validate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">list</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="reference internal" href="_modules/atom_bk_frame/validator/validator_item.html#ListValidatorItem.validate"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.validator.validator_item.ListValidatorItem.validate" title="Permalink to this definition"></a></dt>
+<dd><p>アイテム独自のバリデーション処理</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>value</strong> (<em>Any</em>) – バリデーション対象オブジェクト</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>バリデーション結果</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="atom_bk_frame.validator.validator_item.ObjectValidatorItem">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atom_bk_frame.validator.validator_item.</span></span><span class="sig-name descname"><span class="pre">ObjectValidatorItem</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">is_required</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/atom_bk_frame/validator/validator_item.html#ObjectValidatorItem"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.validator.validator_item.ObjectValidatorItem" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#atom_bk_frame.validator.validator_item.ValidatorItem" title="atom_bk_frame.validator.validator_item.ValidatorItem"><code class="xref py py-class docutils literal notranslate"><span class="pre">ValidatorItem</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="atom_bk_frame.validator.validator_item.TextValidatorItem">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atom_bk_frame.validator.validator_item.</span></span><span class="sig-name descname"><span class="pre">TextValidatorItem</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">is_required</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/atom_bk_frame/validator/validator_item.html#TextValidatorItem"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.validator.validator_item.TextValidatorItem" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#atom_bk_frame.validator.validator_item.ValidatorItem" title="atom_bk_frame.validator.validator_item.ValidatorItem"><code class="xref py py-class docutils literal notranslate"><span class="pre">ValidatorItem</span></code></a></p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="atom_bk_frame.validator.validator_item.ValidatorItem">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atom_bk_frame.validator.validator_item.</span></span><span class="sig-name descname"><span class="pre">ValidatorItem</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">is_required</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/atom_bk_frame/validator/validator_item.html#ValidatorItem"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.validator.validator_item.ValidatorItem" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>バリデーションアイテム基底クラス</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="atom_bk_frame.validator.validator_item.ValidatorItem.convert">
+<span class="sig-name descname"><span class="pre">convert</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Any</span></span></span><a class="reference internal" href="_modules/atom_bk_frame/validator/validator_item.html#ValidatorItem.convert"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.validator.validator_item.ValidatorItem.convert" title="Permalink to this definition"></a></dt>
+<dd><p>バリデーション対象オブジェクトのバリデーション後の変換処理</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>value</strong> (<em>Any</em>) – バリデーション対象オブジェクト</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>返還後オブジェクト</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Any</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atom_bk_frame.validator.validator_item.ValidatorItem.execute_validate">
+<span class="sig-name descname"><span class="pre">execute_validate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="reference internal" href="_modules/atom_bk_frame/validator/validator_item.html#ValidatorItem.execute_validate"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.validator.validator_item.ValidatorItem.execute_validate" title="Permalink to this definition"></a></dt>
+<dd><p>バリデーション処理</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>value</strong> (<em>Any</em>) – バリデーション対象オブジェクト</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>バリデーション結果</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atom_bk_frame.validator.validator_item.ValidatorItem.set_validate_callback">
+<span class="sig-name descname"><span class="pre">set_validate_callback</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">validate_callback</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/atom_bk_frame/validator/validator_item.html#ValidatorItem.set_validate_callback"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.validator.validator_item.ValidatorItem.set_validate_callback" title="Permalink to this definition"></a></dt>
+<dd><p>カスタマイズ用バリデーションコールバックの設定</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>validate_callback</strong> (<em>Callable</em><em>[</em><em>[</em><em>Any</em><em>]</em><em>, </em><em>bool</em><em>]</em>) – バリデーションコールバック</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atom_bk_frame.validator.validator_item.ValidatorItem.validate">
+<span class="sig-name descname"><span class="pre">validate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="reference internal" href="_modules/atom_bk_frame/validator/validator_item.html#ValidatorItem.validate"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.validator.validator_item.ValidatorItem.validate" title="Permalink to this definition"></a></dt>
+<dd><p>アイテム独自のバリデーション処理</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>value</strong> (<em>Any</em>) – バリデーション対象オブジェクト</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>バリデーション結果</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="atom_bk_frame.validator.validator_item.VcharValidatorItem">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atom_bk_frame.validator.validator_item.</span></span><span class="sig-name descname"><span class="pre">VcharValidatorItem</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">is_required</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/atom_bk_frame/validator/validator_item.html#VcharValidatorItem"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.validator.validator_item.VcharValidatorItem" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#atom_bk_frame.validator.validator_item.ValidatorItem" title="atom_bk_frame.validator.validator_item.ValidatorItem"><code class="xref py py-class docutils literal notranslate"><span class="pre">ValidatorItem</span></code></a></p>
+<p>文字列用バリデーションアイテム</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>ValidatorItem</strong> (<em>_type_</em>) – バリデーションアイテム基底クラス</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="atom_bk_frame.validator.validator_item.VcharValidatorItem.convert">
+<span class="sig-name descname"><span class="pre">convert</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/atom_bk_frame/validator/validator_item.html#VcharValidatorItem.convert"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.validator.validator_item.VcharValidatorItem.convert" title="Permalink to this definition"></a></dt>
+<dd><p>バリデーション対象オブジェクトのバリデーション後の変換処理</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>value</strong> (<em>Any</em>) – バリデーション対象オブジェクト</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>返還後オブジェクト</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Any</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atom_bk_frame.validator.validator_item.VcharValidatorItem.validate">
+<span class="sig-name descname"><span class="pre">validate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="reference internal" href="_modules/atom_bk_frame/validator/validator_item.html#VcharValidatorItem.validate"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.validator.validator_item.VcharValidatorItem.validate" title="Permalink to this definition"></a></dt>
+<dd><p>アイテム独自のバリデーション処理</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>value</strong> (<em>Any</em>) – バリデーション対象オブジェクト</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>バリデーション結果</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-atom_bk_frame.validator">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-atom_bk_frame.validator" title="Permalink to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="atom_bk_frame.util.log.html" class="btn btn-neutral float-left" title="atom_bk_frame.util.log package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Atom1116.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>atom_bk_frame.core package &mdash; atom_bk_frame  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="atom_bk_frame.db package" href="atom_bk_frame.db.html" />
+    <link rel="prev" title="atom_bk_frame.controller package" href="atom_bk_frame.controller.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> atom_bk_frame
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="atom_bk_frame.html">atom_bk_frame package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="atom_bk_frame.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="atom_bk_frame.auth.html">atom_bk_frame.auth package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="atom_bk_frame.controller.html">atom_bk_frame.controller package</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">atom_bk_frame.core package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-atom_bk_frame.core.middleware">atom_bk_frame.core.middleware module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-atom_bk_frame.core.router">atom_bk_frame.core.router module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-atom_bk_frame.core.url_pattern">atom_bk_frame.core.url_pattern module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-atom_bk_frame.core.wsgi_app">atom_bk_frame.core.wsgi_app module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-atom_bk_frame.core">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="atom_bk_frame.db.html">atom_bk_frame.db package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="atom_bk_frame.http.html">atom_bk_frame.http package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="atom_bk_frame.middleware.html">atom_bk_frame.middleware package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="atom_bk_frame.util.html">atom_bk_frame.util package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="atom_bk_frame.validator.html">atom_bk_frame.validator package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="atom_bk_frame.html#module-atom_bk_frame">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">atom_bk_frame</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="atom_bk_frame.html">atom_bk_frame package</a> &raquo;</li>
+      <li>atom_bk_frame.core package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/atom_bk_frame.core.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="atom-bk-frame-core-package">
+<h1>atom_bk_frame.core package<a class="headerlink" href="#atom-bk-frame-core-package" title="Permalink to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-atom_bk_frame.core.middleware">
+<span id="atom-bk-frame-core-middleware-module"></span><h2>atom_bk_frame.core.middleware module<a class="headerlink" href="#module-atom_bk_frame.core.middleware" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="atom_bk_frame.core.middleware.Middleware">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atom_bk_frame.core.middleware.</span></span><span class="sig-name descname"><span class="pre">Middleware</span></span><a class="reference internal" href="_modules/atom_bk_frame/core/middleware.html#Middleware"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.core.middleware.Middleware" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>ミドルウェア抽象基底クラス</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>metaclass</strong> (<em>_type_</em><em>, </em><em>optional</em>) – Defaults to ABCMeta.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="atom_bk_frame.core.middleware.Middleware.get_request_chain">
+<span class="sig-name descname"><span class="pre">get_request_chain</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">response</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="atom_bk_frame.http.response.html#atom_bk_frame.http.response.response.Response" title="atom_bk_frame.http.response.response.Response"><span class="pre">Response</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">request</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="atom_bk_frame.http.html#atom_bk_frame.http.request.Request" title="atom_bk_frame.http.request.Request"><span class="pre">Request</span></a></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="atom_bk_frame.http.response.html#atom_bk_frame.http.response.response.Response" title="atom_bk_frame.http.response.response.Response"><span class="pre">Response</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="atom_bk_frame.http.html#atom_bk_frame.http.request.Request" title="atom_bk_frame.http.request.Request"><span class="pre">Request</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Dict</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/atom_bk_frame/core/middleware.html#Middleware.get_request_chain"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.core.middleware.Middleware.get_request_chain" title="Permalink to this definition"></a></dt>
+<dd><p>リクエスト情報取得チェイン</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>response</strong> (<a class="reference internal" href="atom_bk_frame.http.response.html#atom_bk_frame.http.response.response.Response" title="atom_bk_frame.http.response.response.Response"><em>Response</em></a>) – 一時的なレスポンス</p></li>
+<li><p><strong>request</strong> (<a class="reference internal" href="atom_bk_frame.http.html#atom_bk_frame.http.request.Request" title="atom_bk_frame.http.request.Request"><em>Request</em></a>) – リクエスト</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>リクエスト情報</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Tuple[<a class="reference internal" href="atom_bk_frame.http.response.html#atom_bk_frame.http.response.response.Response" title="atom_bk_frame.http.response.response.Response">Response</a>, <a class="reference internal" href="atom_bk_frame.http.html#atom_bk_frame.http.request.Request" title="atom_bk_frame.http.request.Request">Request</a>, Dict]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atom_bk_frame.core.middleware.Middleware.get_response_chain">
+<span class="sig-name descname"><span class="pre">get_response_chain</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">response</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="atom_bk_frame.http.response.html#atom_bk_frame.http.response.response.Response" title="atom_bk_frame.http.response.response.Response"><span class="pre">Response</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="atom_bk_frame.http.response.html#atom_bk_frame.http.response.response.Response" title="atom_bk_frame.http.response.response.Response"><span class="pre">Response</span></a></span></span><a class="reference internal" href="_modules/atom_bk_frame/core/middleware.html#Middleware.get_response_chain"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.core.middleware.Middleware.get_response_chain" title="Permalink to this definition"></a></dt>
+<dd><p>レスポンス情報取得チェイン</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>response</strong> (<a class="reference internal" href="atom_bk_frame.http.response.html#atom_bk_frame.http.response.response.Response" title="atom_bk_frame.http.response.response.Response"><em>Response</em></a>) – レスポンス</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>レスポンス</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="atom_bk_frame.http.response.html#atom_bk_frame.http.response.response.Response" title="atom_bk_frame.http.response.response.Response">Response</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atom_bk_frame.core.middleware.Middleware.request_process">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">request_process</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">response</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="atom_bk_frame.http.response.html#atom_bk_frame.http.response.response.Response" title="atom_bk_frame.http.response.response.Response"><span class="pre">Response</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">request</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="atom_bk_frame.http.html#atom_bk_frame.http.request.Request" title="atom_bk_frame.http.request.Request"><span class="pre">Request</span></a></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">bool</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="atom_bk_frame.http.response.html#atom_bk_frame.http.response.response.Response" title="atom_bk_frame.http.response.response.Response"><span class="pre">Response</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="atom_bk_frame.http.html#atom_bk_frame.http.request.Request" title="atom_bk_frame.http.request.Request"><span class="pre">Request</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Dict</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/atom_bk_frame/core/middleware.html#Middleware.request_process"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.core.middleware.Middleware.request_process" title="Permalink to this definition"></a></dt>
+<dd><p>リクエスト時のミドルウェア処理</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>response</strong> (<a class="reference internal" href="atom_bk_frame.http.response.html#atom_bk_frame.http.response.response.Response" title="atom_bk_frame.http.response.response.Response"><em>Response</em></a>) – 一時リクエスト情報</p></li>
+<li><p><strong>request</strong> (<a class="reference internal" href="atom_bk_frame.http.html#atom_bk_frame.http.request.Request" title="atom_bk_frame.http.request.Request"><em>Request</em></a>) – レスポンス情報</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>bool, Response, Request, Dict]: 続行可否, 一時レスポンス, リクエスト情報</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Tuple[is_continue</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atom_bk_frame.core.middleware.Middleware.response_process">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">response_process</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">response</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="atom_bk_frame.http.response.html#atom_bk_frame.http.response.response.Response" title="atom_bk_frame.http.response.response.Response"><span class="pre">Response</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">bool</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="atom_bk_frame.http.response.html#atom_bk_frame.http.response.response.Response" title="atom_bk_frame.http.response.response.Response"><span class="pre">Response</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/atom_bk_frame/core/middleware.html#Middleware.response_process"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.core.middleware.Middleware.response_process" title="Permalink to this definition"></a></dt>
+<dd><p>レスポンス時のミドルウェア処理</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>response</strong> (<a class="reference internal" href="atom_bk_frame.http.response.html#atom_bk_frame.http.response.response.Response" title="atom_bk_frame.http.response.response.Response"><em>Response</em></a>) – レスポンス</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>bool, Response]: 続行可否, リクエスト</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Tuple[is_continue</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atom_bk_frame.core.middleware.Middleware.set_next_middleware">
+<span class="sig-name descname"><span class="pre">set_next_middleware</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">next</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/atom_bk_frame/core/middleware.html#Middleware.set_next_middleware"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.core.middleware.Middleware.set_next_middleware" title="Permalink to this definition"></a></dt>
+<dd><p>チェインするミドルウェア設定</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>next</strong> (<em>function</em>) – チェインするミドルウェア</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>チェイン先のミドルウェア</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#atom_bk_frame.core.middleware.Middleware" title="atom_bk_frame.core.middleware.Middleware">Middleware</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="atom_bk_frame.core.middleware.MiddlewareProcess">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atom_bk_frame.core.middleware.</span></span><span class="sig-name descname"><span class="pre">MiddlewareProcess</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">callback</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">middleware</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/atom_bk_frame/core/middleware.html#MiddlewareProcess"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.core.middleware.MiddlewareProcess" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>ミドルウェア処理プロセスクラス</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="atom_bk_frame.core.middleware.MiddlewareProcess.get_response_with_middleware_chain">
+<span class="sig-name descname"><span class="pre">get_response_with_middleware_chain</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="atom_bk_frame.http.html#atom_bk_frame.http.request.Request" title="atom_bk_frame.http.request.Request"><span class="pre">Request</span></a></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="atom_bk_frame.http.response.html#atom_bk_frame.http.response.response.Response" title="atom_bk_frame.http.response.response.Response"><span class="pre">Response</span></a></span></span><a class="reference internal" href="_modules/atom_bk_frame/core/middleware.html#MiddlewareProcess.get_response_with_middleware_chain"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.core.middleware.MiddlewareProcess.get_response_with_middleware_chain" title="Permalink to this definition"></a></dt>
+<dd><p>ミドルウェア処理を通したレスポンス取得処理
+コンストラクタで設定したミドルウェアクラスの処理を通してレスポンス取得処理を実行する。
+:param request: リクエスト
+:type request: Request</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>レスポンス</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="atom_bk_frame.http.response.html#atom_bk_frame.http.response.response.Response" title="atom_bk_frame.http.response.response.Response">Response</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-atom_bk_frame.core.router">
+<span id="atom-bk-frame-core-router-module"></span><h2>atom_bk_frame.core.router module<a class="headerlink" href="#module-atom_bk_frame.core.router" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="atom_bk_frame.core.router.Router">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atom_bk_frame.core.router.</span></span><span class="sig-name descname"><span class="pre">Router</span></span><a class="reference internal" href="_modules/atom_bk_frame/core/router.html#Router"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.core.router.Router" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>ルータークラス</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>_description_</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>_type_</p>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="atom_bk_frame.core.router.Router.AUTH_URL_PATTERN">
+<span class="sig-name descname"><span class="pre">AUTH_URL_PATTERN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'auth_urlpatterns'</span></em><a class="headerlink" href="#atom_bk_frame.core.router.Router.AUTH_URL_PATTERN" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="atom_bk_frame.core.router.Router.URL_PATTERN">
+<span class="sig-name descname"><span class="pre">URL_PATTERN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'urlpatterns'</span></em><a class="headerlink" href="#atom_bk_frame.core.router.Router.URL_PATTERN" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atom_bk_frame.core.router.Router.load_auth_routes">
+<span class="sig-name descname"><span class="pre">load_auth_routes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/atom_bk_frame/core/router.html#Router.load_auth_routes"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.core.router.Router.load_auth_routes" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atom_bk_frame.core.router.Router.load_routes">
+<span class="sig-name descname"><span class="pre">load_routes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/atom_bk_frame/core/router.html#Router.load_routes"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.core.router.Router.load_routes" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atom_bk_frame.core.router.Router.match">
+<span class="sig-name descname"><span class="pre">match</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="atom_bk_frame.http.html#atom_bk_frame.http.request.Request" title="atom_bk_frame.http.request.Request"><span class="pre">Request</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Callable</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/atom_bk_frame/core/router.html#Router.match"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.core.router.Router.match" title="Permalink to this definition"></a></dt>
+<dd><p>Urlの照合</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>method</strong> (<em>str</em>) – メソッド</p></li>
+<li><p><strong>path</strong> (<em>str</em>) – Urlパス</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>wsgiレスポンスコールバック</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>t.Tuple[t.Callable, dict]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-atom_bk_frame.core.url_pattern">
+<span id="atom-bk-frame-core-url-pattern-module"></span><h2>atom_bk_frame.core.url_pattern module<a class="headerlink" href="#module-atom_bk_frame.core.url_pattern" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="atom_bk_frame.core.url_pattern.UrlPattern">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atom_bk_frame.core.url_pattern.</span></span><span class="sig-name descname"><span class="pre">UrlPattern</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'/$'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">controller</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="atom_bk_frame.controller.html#atom_bk_frame.controller.controller.Controller" title="atom_bk_frame.controller.controller.Controller"><span class="pre">Controller</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/atom_bk_frame/core/url_pattern.html#UrlPattern"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.core.url_pattern.UrlPattern" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>URLパターンクラス</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="atom_bk_frame.core.url_pattern.UrlPattern.controller">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">controller</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="atom_bk_frame.controller.html#atom_bk_frame.controller.controller.Controller" title="atom_bk_frame.controller.controller.Controller"><span class="pre">Controller</span></a></em><a class="headerlink" href="#atom_bk_frame.core.url_pattern.UrlPattern.controller" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="atom_bk_frame.core.url_pattern.UrlPattern.path">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">path</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#atom_bk_frame.core.url_pattern.UrlPattern.path" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="atom_bk_frame.core.url_pattern.UrlPattern.path_compiled">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">path_compiled</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Pattern</span></em><a class="headerlink" href="#atom_bk_frame.core.url_pattern.UrlPattern.path_compiled" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-atom_bk_frame.core.wsgi_app">
+<span id="atom-bk-frame-core-wsgi-app-module"></span><h2>atom_bk_frame.core.wsgi_app module<a class="headerlink" href="#module-atom_bk_frame.core.wsgi_app" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="atom_bk_frame.core.wsgi_app.WsgiApp">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atom_bk_frame.core.wsgi_app.</span></span><span class="sig-name descname"><span class="pre">WsgiApp</span></span><a class="reference internal" href="_modules/atom_bk_frame/core/wsgi_app.html#WsgiApp"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.core.wsgi_app.WsgiApp" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>WSGIアプリケーションメインクラス</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="atom_bk_frame.core.wsgi_app.WsgiApp.wsgi_process">
+<span class="sig-name descname"><span class="pre">wsgi_process</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">env</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start_response</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Any</span></span></span><a class="reference internal" href="_modules/atom_bk_frame/core/wsgi_app.html#WsgiApp.wsgi_process"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.core.wsgi_app.WsgiApp.wsgi_process" title="Permalink to this definition"></a></dt>
+<dd><p>WSGIアプリケーションメイン処理</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>env</strong> (<em>dict</em>) – 環境変数</p></li>
+<li><p><strong>start_response</strong> (<em>t.Callable</em>) – HTTP応答メソッド</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>リクエストボディ</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>t.Any</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-atom_bk_frame.core">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-atom_bk_frame.core" title="Permalink to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="atom_bk_frame.controller.html" class="btn btn-neutral float-left" title="atom_bk_frame.controller package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="atom_bk_frame.db.html" class="btn btn-neutral float-right" title="atom_bk_frame.db package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Atom1116.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

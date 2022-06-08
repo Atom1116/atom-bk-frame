@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>atom_bk_frame.util.log package &mdash; atom_bk_frame  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="atom_bk_frame.validator package" href="atom_bk_frame.validator.html" />
+    <link rel="prev" title="atom_bk_frame.util package" href="atom_bk_frame.util.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> atom_bk_frame
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="atom_bk_frame.html">atom_bk_frame package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="atom_bk_frame.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="atom_bk_frame.auth.html">atom_bk_frame.auth package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="atom_bk_frame.controller.html">atom_bk_frame.controller package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="atom_bk_frame.core.html">atom_bk_frame.core package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="atom_bk_frame.db.html">atom_bk_frame.db package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="atom_bk_frame.http.html">atom_bk_frame.http package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="atom_bk_frame.middleware.html">atom_bk_frame.middleware package</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="atom_bk_frame.util.html">atom_bk_frame.util package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="atom_bk_frame.util.html#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="atom_bk_frame.util.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="atom_bk_frame.util.html#module-atom_bk_frame.util.class_loader_util">atom_bk_frame.util.class_loader_util module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="atom_bk_frame.util.html#module-atom_bk_frame.util.file_util">atom_bk_frame.util.file_util module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="atom_bk_frame.util.html#module-atom_bk_frame.util.settings_util">atom_bk_frame.util.settings_util module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="atom_bk_frame.util.html#module-atom_bk_frame.util">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="atom_bk_frame.validator.html">atom_bk_frame.validator package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="atom_bk_frame.html#module-atom_bk_frame">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">atom_bk_frame</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="atom_bk_frame.html">atom_bk_frame package</a> &raquo;</li>
+          <li><a href="atom_bk_frame.util.html">atom_bk_frame.util package</a> &raquo;</li>
+      <li>atom_bk_frame.util.log package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/atom_bk_frame.util.log.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="atom-bk-frame-util-log-package">
+<h1>atom_bk_frame.util.log package<a class="headerlink" href="#atom-bk-frame-util-log-package" title="Permalink to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-atom_bk_frame.util.log.log_util">
+<span id="atom-bk-frame-util-log-log-util-module"></span><h2>atom_bk_frame.util.log.log_util module<a class="headerlink" href="#module-atom_bk_frame.util.log.log_util" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="atom_bk_frame.util.log.log_util.Logger">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atom_bk_frame.util.log.log_util.</span></span><span class="sig-name descname"><span class="pre">Logger</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">logger_name</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/atom_bk_frame/util/log/log_util.html#Logger"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.util.log.log_util.Logger" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>ロガー基底クラス</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>metaclass</strong> (<em>_type_</em><em>, </em><em>optional</em>) – Defaults to ABCMeta.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="atom_bk_frame.util.log.log_util.Logger.create_logger">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">create_logger</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Logger</span></span></span><a class="reference internal" href="_modules/atom_bk_frame/util/log/log_util.html#Logger.create_logger"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.util.log.log_util.Logger.create_logger" title="Permalink to this definition"></a></dt>
+<dd><p>ロガーを作成します
+:raises NotImplementedError: _description_</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>ロガー</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>logging.Logger</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="atom_bk_frame.util.log.log_util.Logger.logger">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">logger</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Logger</span></em><a class="headerlink" href="#atom_bk_frame.util.log.log_util.Logger.logger" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="atom_bk_frame.util.log.log_util.Logger.logger_name">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">logger_name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#atom_bk_frame.util.log.log_util.Logger.logger_name" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="atom_bk_frame.util.log.log_util.LoggerManeger">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atom_bk_frame.util.log.log_util.</span></span><span class="sig-name descname"><span class="pre">LoggerManeger</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/atom_bk_frame/util/log/log_util.html#LoggerManeger"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.util.log.log_util.LoggerManeger" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>ロガー管理クラス</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="atom_bk_frame.util.log.log_util.LoggerManeger.get_logger_by_logger_name">
+<span class="sig-name descname"><span class="pre">get_logger_by_logger_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">logger_name</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/atom_bk_frame/util/log/log_util.html#LoggerManeger.get_logger_by_logger_name"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.util.log.log_util.LoggerManeger.get_logger_by_logger_name" title="Permalink to this definition"></a></dt>
+<dd><p>指定した名称のロガーを取得します</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>logger_name</strong> (<em>_type_</em>) – ロガー名</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>ロガー</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>_type_</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="atom_bk_frame.util.log.log_util.MainLogger">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atom_bk_frame.util.log.log_util.</span></span><span class="sig-name descname"><span class="pre">MainLogger</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">logger_name</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/atom_bk_frame/util/log/log_util.html#MainLogger"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.util.log.log_util.MainLogger" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#atom_bk_frame.util.log.log_util.Logger" title="atom_bk_frame.util.log.log_util.Logger"><code class="xref py py-class docutils literal notranslate"><span class="pre">Logger</span></code></a></p>
+<p>メイン処理のロガークラス</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>Logger</strong> (<em>_type_</em>) – ロガー基底クラス</p>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="atom_bk_frame.util.log.log_util.MainLogger.LOG_DATE_FORMAT">
+<span class="sig-name descname"><span class="pre">LOG_DATE_FORMAT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'%Y-%m-%dT%H:%M:%S'</span></em><a class="headerlink" href="#atom_bk_frame.util.log.log_util.MainLogger.LOG_DATE_FORMAT" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="atom_bk_frame.util.log.log_util.MainLogger.LOG_DIR_NAME">
+<span class="sig-name descname"><span class="pre">LOG_DIR_NAME</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'log'</span></em><a class="headerlink" href="#atom_bk_frame.util.log.log_util.MainLogger.LOG_DIR_NAME" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="atom_bk_frame.util.log.log_util.MainLogger.LOG_FILE_ENCORD">
+<span class="sig-name descname"><span class="pre">LOG_FILE_ENCORD</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'utf-8'</span></em><a class="headerlink" href="#atom_bk_frame.util.log.log_util.MainLogger.LOG_FILE_ENCORD" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="atom_bk_frame.util.log.log_util.MainLogger.LOG_FILE_NAME">
+<span class="sig-name descname"><span class="pre">LOG_FILE_NAME</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'main.log'</span></em><a class="headerlink" href="#atom_bk_frame.util.log.log_util.MainLogger.LOG_FILE_NAME" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="atom_bk_frame.util.log.log_util.MainLogger.LOG_FORMAT">
+<span class="sig-name descname"><span class="pre">LOG_FORMAT</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'%(asctime)s</span> <span class="pre">%(levelname)s</span> <span class="pre">%(message)s'</span></em><a class="headerlink" href="#atom_bk_frame.util.log.log_util.MainLogger.LOG_FORMAT" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atom_bk_frame.util.log.log_util.MainLogger.create_logger">
+<span class="sig-name descname"><span class="pre">create_logger</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/atom_bk_frame/util/log/log_util.html#MainLogger.create_logger"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.util.log.log_util.MainLogger.create_logger" title="Permalink to this definition"></a></dt>
+<dd><p>ロガーを作成します
+:raises NotImplementedError: _description_</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>ロガー</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>logging.Logger</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="atom_bk_frame.util.log.log_util.get_logger">
+<span class="sig-prename descclassname"><span class="pre">atom_bk_frame.util.log.log_util.</span></span><span class="sig-name descname"><span class="pre">get_logger</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">logging_name</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Logger</span></span></span><a class="reference internal" href="_modules/atom_bk_frame/util/log/log_util.html#get_logger"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.util.log.log_util.get_logger" title="Permalink to this definition"></a></dt>
+<dd><p>指定したロガー名のロガーを取得します</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>logging_name</strong> (<em>_type_</em>) – ロガー名</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>ロガー</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>logging.Logger</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="atom_bk_frame.util.log.log_util.get_main_logger">
+<span class="sig-prename descclassname"><span class="pre">atom_bk_frame.util.log.log_util.</span></span><span class="sig-name descname"><span class="pre">get_main_logger</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Logger</span></span></span><a class="reference internal" href="_modules/atom_bk_frame/util/log/log_util.html#get_main_logger"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.util.log.log_util.get_main_logger" title="Permalink to this definition"></a></dt>
+<dd><p>Mainロガーを取得します</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Mainロガー</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>logging.Logger</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-atom_bk_frame.util.log">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-atom_bk_frame.util.log" title="Permalink to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="atom_bk_frame.util.html" class="btn btn-neutral float-left" title="atom_bk_frame.util package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="atom_bk_frame.validator.html" class="btn btn-neutral float-right" title="atom_bk_frame.validator package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Atom1116.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

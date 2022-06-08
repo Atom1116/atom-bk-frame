@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>atom_bk_frame.auth package &mdash; atom_bk_frame  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="atom_bk_frame.auth.controllers package" href="atom_bk_frame.auth.controllers.html" />
+    <link rel="prev" title="atom_bk_frame package" href="atom_bk_frame.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> atom_bk_frame
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="atom_bk_frame.html">atom_bk_frame package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="atom_bk_frame.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">atom_bk_frame.auth package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-atom_bk_frame.auth.auth_control_mixin">atom_bk_frame.auth.auth_control_mixin module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-atom_bk_frame.auth.encrypt_maneger">atom_bk_frame.auth.encrypt_maneger module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-atom_bk_frame.auth.session_maneger">atom_bk_frame.auth.session_maneger module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-atom_bk_frame.auth">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="atom_bk_frame.controller.html">atom_bk_frame.controller package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="atom_bk_frame.core.html">atom_bk_frame.core package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="atom_bk_frame.db.html">atom_bk_frame.db package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="atom_bk_frame.http.html">atom_bk_frame.http package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="atom_bk_frame.middleware.html">atom_bk_frame.middleware package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="atom_bk_frame.util.html">atom_bk_frame.util package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="atom_bk_frame.validator.html">atom_bk_frame.validator package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="atom_bk_frame.html#module-atom_bk_frame">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">atom_bk_frame</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="atom_bk_frame.html">atom_bk_frame package</a> &raquo;</li>
+      <li>atom_bk_frame.auth package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/atom_bk_frame.auth.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="atom-bk-frame-auth-package">
+<h1>atom_bk_frame.auth package<a class="headerlink" href="#atom-bk-frame-auth-package" title="Permalink to this heading"></a></h1>
+<section id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="atom_bk_frame.auth.controllers.html">atom_bk_frame.auth.controllers package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="atom_bk_frame.auth.controllers.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="atom_bk_frame.auth.controllers.queries.html">atom_bk_frame.auth.controllers.queries package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="atom_bk_frame.auth.controllers.queries.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="atom_bk_frame.auth.controllers.queries.html#module-atom_bk_frame.auth.controllers.queries.sign_in_query_enum">atom_bk_frame.auth.controllers.queries.sign_in_query_enum module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="atom_bk_frame.auth.controllers.queries.html#module-atom_bk_frame.auth.controllers.queries">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="atom_bk_frame.auth.controllers.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="atom_bk_frame.auth.controllers.html#module-atom_bk_frame.auth.controllers.auth_urls">atom_bk_frame.auth.controllers.auth_urls module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="atom_bk_frame.auth.controllers.html#module-atom_bk_frame.auth.controllers.sign_in_contrller">atom_bk_frame.auth.controllers.sign_in_contrller module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="atom_bk_frame.auth.controllers.html#module-atom_bk_frame.auth.controllers.sign_out_controller">atom_bk_frame.auth.controllers.sign_out_controller module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="atom_bk_frame.auth.controllers.html#module-atom_bk_frame.auth.controllers.sign_up_controller">atom_bk_frame.auth.controllers.sign_up_controller module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="atom_bk_frame.auth.controllers.html#module-atom_bk_frame.auth.controllers">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="atom_bk_frame.auth.entities.html">atom_bk_frame.auth.entities package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="atom_bk_frame.auth.entities.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="atom_bk_frame.auth.entities.html#module-atom_bk_frame.auth.entities.auth_user_entity">atom_bk_frame.auth.entities.auth_user_entity module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="atom_bk_frame.auth.entities.html#module-atom_bk_frame.auth.entities.session_entitiy">atom_bk_frame.auth.entities.session_entitiy module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="atom_bk_frame.auth.entities.html#module-atom_bk_frame.auth.entities">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
+</section>
+<section id="module-atom_bk_frame.auth.auth_control_mixin">
+<span id="atom-bk-frame-auth-auth-control-mixin-module"></span><h2>atom_bk_frame.auth.auth_control_mixin module<a class="headerlink" href="#module-atom_bk_frame.auth.auth_control_mixin" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="atom_bk_frame.auth.auth_control_mixin.AuthControlMixin">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atom_bk_frame.auth.auth_control_mixin.</span></span><span class="sig-name descname"><span class="pre">AuthControlMixin</span></span><a class="reference internal" href="_modules/atom_bk_frame/auth/auth_control_mixin.html#AuthControlMixin"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.auth.auth_control_mixin.AuthControlMixin" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+</section>
+<section id="module-atom_bk_frame.auth.encrypt_maneger">
+<span id="atom-bk-frame-auth-encrypt-maneger-module"></span><h2>atom_bk_frame.auth.encrypt_maneger module<a class="headerlink" href="#module-atom_bk_frame.auth.encrypt_maneger" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="atom_bk_frame.auth.encrypt_maneger.EncryptManeger">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atom_bk_frame.auth.encrypt_maneger.</span></span><span class="sig-name descname"><span class="pre">EncryptManeger</span></span><a class="reference internal" href="_modules/atom_bk_frame/auth/encrypt_maneger.html#EncryptManeger"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.auth.encrypt_maneger.EncryptManeger" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>暗号化マネージャークラス</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="atom_bk_frame.auth.encrypt_maneger.EncryptManeger.get_hash">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_hash</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">password_origin</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/atom_bk_frame/auth/encrypt_maneger.html#EncryptManeger.get_hash"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.auth.encrypt_maneger.EncryptManeger.get_hash" title="Permalink to this definition"></a></dt>
+<dd><p>パスワードをハッシュ化します</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>password_origin</strong> (<em>str</em>) – オリジナルパスワード</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>ハッシュ化したパスワード</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-atom_bk_frame.auth.session_maneger">
+<span id="atom-bk-frame-auth-session-maneger-module"></span><h2>atom_bk_frame.auth.session_maneger module<a class="headerlink" href="#module-atom_bk_frame.auth.session_maneger" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="atom_bk_frame.auth.session_maneger.SessionManeger">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atom_bk_frame.auth.session_maneger.</span></span><span class="sig-name descname"><span class="pre">SessionManeger</span></span><a class="reference internal" href="_modules/atom_bk_frame/auth/session_maneger.html#SessionManeger"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.auth.session_maneger.SessionManeger" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>セッション管理関連の処理をまとめたクラス</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="atom_bk_frame.auth.session_maneger.SessionManeger.DEFAULT_EXPIRED_DAYS">
+<span class="sig-name descname"><span class="pre">DEFAULT_EXPIRED_DAYS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">31</span></em><a class="headerlink" href="#atom_bk_frame.auth.session_maneger.SessionManeger.DEFAULT_EXPIRED_DAYS" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="atom_bk_frame.auth.session_maneger.SessionManeger.SESSION_CODE_LEN">
+<span class="sig-name descname"><span class="pre">SESSION_CODE_LEN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">32</span></em><a class="headerlink" href="#atom_bk_frame.auth.session_maneger.SessionManeger.SESSION_CODE_LEN" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atom_bk_frame.auth.session_maneger.SessionManeger.check_epired">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">check_epired</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">expired</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">datetime</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="reference internal" href="_modules/atom_bk_frame/auth/session_maneger.html#SessionManeger.check_epired"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.auth.session_maneger.SessionManeger.check_epired" title="Permalink to this definition"></a></dt>
+<dd><p>セッションの期限チェック</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>expired</strong> (<em>datetime</em>) – セッション日時</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>期限切れ有無</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atom_bk_frame.auth.session_maneger.SessionManeger.generate_delete_cookie_syntax">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">generate_delete_cookie_syntax</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/atom_bk_frame/auth/session_maneger.html#SessionManeger.generate_delete_cookie_syntax"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.auth.session_maneger.SessionManeger.generate_delete_cookie_syntax" title="Permalink to this definition"></a></dt>
+<dd><p>削除用セッションクッキー文字列を生成します</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>session_code</strong> (<em>str</em>) – セッションコード</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>削除用セッションクッキー文字列</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atom_bk_frame.auth.session_maneger.SessionManeger.generate_set_cookie_syntax">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">generate_set_cookie_syntax</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">session_code</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/atom_bk_frame/auth/session_maneger.html#SessionManeger.generate_set_cookie_syntax"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.auth.session_maneger.SessionManeger.generate_set_cookie_syntax" title="Permalink to this definition"></a></dt>
+<dd><p>セッションクッキー文字列を生成します</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>session_code</strong> (<em>str</em>) – セッションコード</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>セッションクッキー文字列</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atom_bk_frame.auth.session_maneger.SessionManeger.generete_session">
+<span class="sig-name descname"><span class="pre">generete_session</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/atom_bk_frame/auth/session_maneger.html#SessionManeger.generete_session"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#atom_bk_frame.auth.session_maneger.SessionManeger.generete_session" title="Permalink to this definition"></a></dt>
+<dd><p>新しいセッションを生成します</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>user_id</strong> (<em>int</em>) – ユーザID</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>セッションコード</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-atom_bk_frame.auth">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-atom_bk_frame.auth" title="Permalink to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="atom_bk_frame.html" class="btn btn-neutral float-left" title="atom_bk_frame package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="atom_bk_frame.auth.controllers.html" class="btn btn-neutral float-right" title="atom_bk_frame.auth.controllers package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Atom1116.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
