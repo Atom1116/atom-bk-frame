@@ -34,7 +34,7 @@ class Router:
             return
         auth_urlpatterns = get_module_by_route(
             self.AUTH_URL_PATTERN,
-            "todo_scratch.bk_base.auth.controllers.auth_urls"
+            "atom_bk_frame.auth.controllers.auth_urls"
         )
         self.urlpatterns.extend(auth_urlpatterns)
 
