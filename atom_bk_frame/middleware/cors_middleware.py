@@ -13,7 +13,6 @@ class CorsMiddleware(Middleware):
                         **kwargs) -> Tuple[bool, Response, Request, Dict]:
 
         if request.method == "OPTIONS":
-            print("option!!")
             access_control_allo_origins = get_member_by_settings("ACCESS_ALLOW_ORIGIN")
 
             response_option = Response(headers={

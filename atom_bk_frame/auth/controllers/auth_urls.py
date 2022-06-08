@@ -5,7 +5,7 @@ from atom_bk_frame.auth.controllers.sign_up_controller import SignUpController
 from atom_bk_frame.core.url_pattern import UrlPattern
 
 auth_urlpatterns: t.List[UrlPattern] = [
-    UrlPattern(path='/signup', controller=SignUpController()),
-    UrlPattern(path='/signin', controller=SignInController()),
-    UrlPattern(path='/signout', controller=SignOutController())
+    UrlPattern(path='/api/signup', controller=SignUpController()),
+    UrlPattern(path='/api/signin', controller=SignInController()),
+    UrlPattern(path='/api/signout', controller=SignOutController())
 ]
