@@ -78,8 +78,10 @@ WSGI インターフェースである Web サーバーとの中継ファイル�
 from atom_bk_frame.core.wsgi_app import WsgiApp
 import os
 
+# settings.pyの所在を記載
 os.environ.setdefault('SETTINGS_PATH', 'app.settings')
 
+# このappプロパティがWSGIサーバとのインタフェースとなる。WSGIサーバへの設定時にはこちらのappプロパティを参照するように設定する。
 app = WsgiApp()
 ```
 
@@ -88,11 +90,12 @@ app = WsgiApp()
 アプリケーションの設定を記載します。詳しくは[こちら](https://github.com/Atom1116/todo-scratch/blob/develop/todo_scratch/bk_app/settings.py)を参照。
 
 ```
+# アプリケーションプロジェクト設定(必須)
+# アプリケーションプロジェクトのパス設定
 APP_PATH = 'app'
 
+# urlルーティングファイルのファイル名
 URLS_PATH = 'urls'
-
-IS_DEBUG = True
 ```
 
 ### urls.py
@@ -104,6 +107,7 @@ import typing as t
 from atom_bk_frame.core.url_pattern import UrlPattern
 from app.controllers.hello_controller import HelloController
 
+# 正規表現でマッチするURLパスとコントローラクラスを紐づける。
 urlpatterns: t.List[UrlPattern] = [
     UrlPattern(path='/$', controller=HelloController()),
 ]
@@ -125,6 +129,7 @@ class HelloController(Controller):
     """
 
     def get(self, request: Request, **kwargs) -> Response:
+        # 'Hello World'をリクエストボディへ設定
         return Response('Hello World')
 
 ```
